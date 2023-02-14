@@ -1,0 +1,57 @@
+*   Trying 2a04:4e42::396:443...
+* TCP_NODELAY set
+* Immediate connect fail for 2a04:4e42::396: No route to host
+*   Trying 2a04:4e42:200::396:443...
+* TCP_NODELAY set
+* Immediate connect fail for 2a04:4e42:200::396: No route to host
+*   Trying 2a04:4e42:400::396:443...
+* TCP_NODELAY set
+* Immediate connect fail for 2a04:4e42:400::396: No route to host
+*   Trying 2a04:4e42:600::396:443...
+* TCP_NODELAY set
+* Immediate connect fail for 2a04:4e42:600::396: No route to host
+*   Trying 151.101.1.140:443...
+* TCP_NODELAY set
+* Connected to preview.redd.it (151.101.1.140) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /Applications/MAMP/Library/OpenSSL/cert.pem
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=CALIFORNIA; L=SAN FRANCISCO; O=Reddit Inc.; CN=*.redd.it
+*  start date: Jul  4 00:00:00 2022 GMT
+*  expire date: Dec 31 23:59:59 2022 GMT
+*  subjectAltName: host "preview.redd.it" matched cert's "*.redd.it"
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7fd7c2906e00)
+> GET /urrrjbl41tf91.jpg?width=960&crop=smart&auto=webp&s=4b6c7db2ed01b9f6954c889f20660ca084784338 HTTP/2
+Host: preview.redd.it
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+accept: */*
+referer: http://preview.redd.it
+
+* Connection state changed (MAX_CONCURRENT_STREAMS == 100)!
+< HTTP/2 200 
+< content-type: image/jpeg
+< etag: "axQITq/a1LR7F51hs1fVsUnAk/MHQSwHPpLsR5mnXOM"
+< expires: Thu, 31 Dec 2037 23:59:59 GMT
+< fastly-io-info: ifsz=271195 idim=1079x1260 ifmt=jpeg ofsz=109772 odim=960x1121 ofmt=jpeg
+< fastly-stats: io=1
+< via: 1.1 varnish, 1.1 varnish
+< server: snooserv
+< accept-ranges: bytes
+< date: Wed, 24 Aug 2022 14:49:37 GMT
+< vary: Accept,Origin
+< report-to: {"group": "w3-reporting-nel", "max_age": 14400, "include_subdomains": true,  "endpoints": [{ "url": "https://w3-reporting-nel.reddit.com/reports" }]}, {"group": "w3-reporting", "max_age": 14400, "include_subdomains": true, "endpoints": [{ "url": "https://w3-reporting.reddit.com/reports" }]}
+< nel: {"report_to": "w3-reporting-nel", "max_age": 14400, "include_subdomains": false, "success_fraction": 0.2, "failure_fraction": 0.2}
+< content-length: 109772
+< 
+* Connection #0 to host preview.redd.it left intact
